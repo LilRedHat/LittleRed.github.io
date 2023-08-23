@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buster's Daily Motivation</title>
+    <style>
+        body {
+            font-family: 'Press Start 2P', cursive;
+            background: url('https://images.unsplash.com/photo-1561948955-570b270e7c36') no-repeat center center fixed;
+            background-size: cover;
+            color: #fff;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
+        .container {
+            width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.8);
+            border-radius: 10px;
+            box-shadow: 0 0 10px #000;
+            text-align: center;
+        }
+        h1, h2 {
+            font-size: 24px;
+            color: #ff9800;
+            text-align: center;
+            margin: 10px;
+        }
+        .section {
+            font-size: 14px;
+            margin: 20px;
+            background: #4caf50;
+            padding: 10px;
+            border-radius: 5px;
+            text-align: center;
+        }
+        .motivational-video-link {
+            background-color: #ff4500;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .modal {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.6);
+            z-index: 1000;
+        }
+        .modal-content {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="modal" id="videoModal">
+        <div class="modal-content">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ZXsQAXx_ao0?autoplay=1" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Inspiration for Buster Graphics</h1>
+        <p class="motivational-message">"Your creativity is endless, and your art is a gift to the world."</p>
+        <img src="https://www.w3schools.com/w3images/lights.jpg" alt="Vibrant Art">
+        <div class="section design-tips">
+            Design Tip 1: Less is more.<br>
+            Design Tip 2: Keep your design balanced.
+        </div>
+        <div class="section art-facts">
+            Fact 1: Art can be therapeutic.<br>
+            Fact 2: Pablo Picasso painted over 1,800 paintings.
+        </div>
+        <h2>Today's Motivational Inspiration</h2>
+        <a href="https://www.youtube.com/results?search_query=motivational+videos" target="_blank" class="motivational-video-link">Click Here for Random Motivational Videos on YouTube</a>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            var modal = document.getElementById('videoModal');
+            modal.style.display = 'block';
+            window.addEventListener('click', function(event) {
+                if (event.target === modal) {
+                    modal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>
